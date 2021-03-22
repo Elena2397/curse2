@@ -20,16 +20,16 @@ btns[0].addEventListener('click', () => {
     btns[1].classList.toggle('red');
 });
 
-// wrapper.addEventListener('click', (event) =>{
-//     if(event.target && event.target.tagName == "BUTTON"){
-//         console.log('Hello');
-//     }
-// });
-btns.forEach(btn =>{
-    btn.addEventListener('click', ()=>{
-        console.log("hello");
-    });
+wrapper.addEventListener('click', (event) =>{
+    if(event.target && event.target.tagName == "BUTTON"){
+        console.log('Hello');
+    }
 });
+// btns.forEach(btn =>{
+//     btn.addEventListener('click', ()=>{
+//         console.log("hello");
+//     });
+// });
 const btn = document.createElement('button');
 btn.classList.add('red');
 wrapper.append(btn);
